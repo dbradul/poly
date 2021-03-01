@@ -66,7 +66,8 @@
 <script src="{% static "js/respond.min.js" %}"></script>
 <![endif]-->
 
-{% block extra_head %}{% endblock %}
+{% block extra_head %}
+{% endblock %}
 </head>
 
 <body id="{% block body_id %}body{% endblock %}">
@@ -83,7 +84,15 @@
                     <span class="icon-bar"></span>
                 </button>
                 {% if settings.SITE_TITLE %}<a class="navbar-brand" href="/">{{ settings.SITE_TITLE }}</a>{% endif %}
-				{% if settings.SITE_TAGLINE %}<p class="navbar-text visible-lg">{{ settings.SITE_TAGLINE }}</p>{% endif %}
+                {% if settings.SITE_TAGLINE %}<p class="navbar-text visible-lg">{{ settings.SITE_TAGLINE }}</p>{% endif %}
+
+
+                <div class="ml-3">
+                    Телефон: <b> <a href="tel:+38 (067) 639 22 62">(067) 639 22 62</a> </b>
+                    <img src="{% static 'icons/telegram.png' %}" width="15" height="15">
+                    <img src="{% static 'icons/viber.png' %}" class="rounded-circle"  width="15" height="15">
+                </div>
+
             </div>
             <div class="collapse navbar-collapse">
                {% page_menu "pages/menus/dropdown.html" %}
