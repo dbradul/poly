@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load i18n staticfiles %}
+{% load static %}
 {% block meta_title %}{% trans "Home" %}{% endblock %}
 {% block title %}{% trans "Home" %}{% endblock %}
 {% block top %}
@@ -243,28 +244,38 @@
                 <div class="col-lg-12">
                     <div class="center">
                         <h2>Что говорят наши клиенты</h2>
-                        <p>"Марина и ее команда превзощли все наши самые смелые ожидания! Обязательно обратимся снова!" Семья Сыроежкиных</p>
+{#                        <p>"Марина и ее команда превзощли все наши самые смелые ожидания! Обязательно обратимся снова!" Семья Сыроежкиных</p>#}
                     </div>
                     <div class="gap"></div>
                     <div class="row">
                         <div class="col-md-6">
                             <blockquote>
-                                <p>Лучшие цены в городе</p>
-                                <small>Иван Иванов, CEO, <cite title="Source Title">"Кино и Немцы"</cite></small>
+                                <p>Огромная вам благодарность за создание прекрасных фотокниг. Сделано ярко, красочно, с вниманием, фантазией и вдохновением. Обычные фотографии заиграли новыми красками. С удовольствием обращусь к вам еще! Творческих успехов и процветания !</p>
+                                <small>Клиент<cite title="Source Title"></cite></small>
                             </blockquote>
                             <blockquote>
-                                <p>Идеальное качество!</p>
-                                <small>Head of Marketing, <cite title="Source Title">Luxoft</cite></small>
+                                <p>Сотрудничаем с Мариной уже не первый год. Она всегда предложит варианты, слышит клиента и старается выполнить заказ как можно лучше и быстрее.</p>
+                                <p>Выражаю огромную  благодарность Марине за её творческое отношение к делу. </p>
+                                <small>Лариса Сёмова, консультант <cite title="Source Title">компания Асония</cite></small>
                             </blockquote>
                         </div>
                         <div class="col-md-6">
                             <blockquote>
-                                <p>Сервис - огонь!</p>
-                                <small>Начальник пожарной части, Феерин Х.У., <cite title="Source Title">МЧС Одесской области</cite></small>
+                                <p>Марина профессионал своего дела, подскажет, посоветует, предоставит интересный креативный взгляд на то, как лучше подать и передать то, что хочется заложить в готовую продукцию.</p>
+                                <p>Качество готовой продукции на высшем уровне.</p>
+                                <small>Светлана Чернышева, психолог, арт-терапевт<cite title="Source Title"></cite>
+                                    <a href="https://www.facebook.com/CvetlanaChernyshova">
+                                        <img src="{% static 'icons/facebook-tbn.png' %}" class="rounded-circle"  width="15" height="15">
+                                    </a>
+                                </small>
                             </blockquote>
                             <blockquote>
                                 <p>Очень комфортное и продуктивное сотрудничество, быстрый результат</p>
-                                <small>Брадул Дмитрий, <cite title="Source Title">Консультант</cite></small>
+                                <small>Брадул Дмитрий, <cite title="Source Title">Консультант </cite>
+                                    <a href="https://www.facebook.com/dmytro.bradul">
+                                        <img src="{% static 'icons/facebook-tbn.png' %}" class="rounded-circle"  width="15" height="15">
+                                    </a>
+                                </small>
                             </blockquote>
                         </div>
                     </div>
