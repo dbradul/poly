@@ -5,6 +5,9 @@ stop:
 	docker-compose down
 
 restart:
+	docker-compose restart
+
+reboot:
 	docker-compose down && docker-compose up
 
 startd:
