@@ -1,4 +1,5 @@
 start:
+
 	docker-compose up
 
 stop:
@@ -13,7 +14,7 @@ reboot:
 startd:
 	docker-compose up -d
 
-restartd:
+rebootd:
 	docker-compose down && docker-compose up -d
 
 logs:
